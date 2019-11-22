@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="1dp"
+            android:scaleType="centerCrop"
+            android:src="@color/colorAccent"
+            tools:ignore="ContentDescription,MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="1dp"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            tools:text="@string/hero_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/img_item_photo"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
